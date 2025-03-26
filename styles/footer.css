@@ -1,13 +1,27 @@
 footer {
+    max-width: 22.5rem;
+    width: 100%;
+    align-items: center;
+
     display: flex;
     justify-content: space-between;
-    padding-block: 24px;
+    flex-direction: column;
 
-    font: 14px/150% var(--font-family);
+    gap: 1rem;
+    padding-block: 1.5rem;
+
+    font: .875rem/1.5 var(--font-family);
 }
 
 footer ul {
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
+}
+
+@media (width >= 80em) {
+    footer {
+        max-width: 80rem;
+        flex-direction: row;
+    }
 }
