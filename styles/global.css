@@ -38,10 +38,16 @@ a:hover {
 
 .container{
     padding-inline: 2rem;
-    max-width: 80rem;
+    max-width: 22.5rem;
     margin-inline: auto;
 }
 
 .bg-surface-color {
     background-color: var(--surface-color);
+}
+
+@media (width >= 80em) {
+    .container {
+        max-width: 80rem;
+    }
 }
